@@ -1,0 +1,4 @@
+hostname, ip, rtt, perda_de_pacotes, status
+google,8.8.8.8,39.998,0.0%,Hostname inacessível
+server,10.10.10.10,,100.0%,Hostname inacessível
+server1,104.26.4.131,41.904,0.0%,Hostname inacessível
