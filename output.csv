@@ -1,4 +1,4 @@
 hostname, ip, rtt, perda_de_pacotes, status
-google,8.8.8.8,37.505,0.0%,Conectividade ok
-server,10.10.10.10,,100.0%,Hostname inacessível
-server1,104.26.4.131,44.256,0.0%,Conectividade ok
+google.com,8.8.8.8,46.737,0.0%,Conectividade ok
+NAO_EXISTE,10.10.10.10,,100.0%,Hostname inacessível
+ibm.com,104.122.250.186,46.375,0.0%,Conectividade ok
