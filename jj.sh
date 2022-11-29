@@ -7,8 +7,8 @@ filename="ips.csv"
     while IFS="," read -r servidor ip
     do 
         echo "${servidor}-${ip}"
-        echo "ping -c1 ${ip}"
-        dados=$(ping -c1 ${ip}) 
+        echo "ping -c3 ${ip}"
+        dados=$(ping -c3 ${ip}) 
 
         packetloss=`echo $dados | grep "packet loss" | awk -F ',' '{print $3}' | awk '{print $1}'`
         rrt=`echo $dados | grep "round-trip" | cut -f 6 -d "/"`
@@ -18,11 +18,11 @@ filename="ips.csv"
         nok='100.0%'
         case $packetloss in
             '0.0%') 
-                echo 1 $packetloss==$ok
+                #echo 1 $packetloss==$ok
                 situacao="Conectividade ok"
             ;;
             '100.0%')
-                echo 2 $packetloss==$nok
+                #echo 2 $packetloss==$nok
                 situacao="Hostname inacessível"
             ;;
         esac
